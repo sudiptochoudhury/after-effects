@@ -1,6 +1,6 @@
 {
   "name": "after-effects-noui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send instructions to the AfterEffects scripting environment from node.js.",
   "main": "index.js",
   "scripts": {},

@@ -1,4 +1,7 @@
-## [0.4.16] or after-effects-noui [1.0.0]
+after-effects-noui [1.0.1]
+- cleanup
+
+after-effects-noui [1.0.0]
 ### Changes
 - Add option to pass additional AfterEffects cli agruments
 - Set -noui as the default argument so that AfterEffcts can run as a background process and not show the UI.
