@@ -37,6 +37,7 @@ const options = {
     errorHandling: true,
     minify: false,
     program: null,
+    args: "-noui",
     includes: [
         path.join(__dirname, '/lib/includes/console.jsx'),
         path.join(__dirname, '/lib/includes/es5-shim.jsx'),
@@ -144,7 +145,7 @@ function execute(/*args*/) {
     ensure_executable(command);
     create_result_file_name(command);
 
-    return platform.execute(command)
+    return platform.execute(command, options.args)
         //Handle Results
         .then(() => new Promise((resolve, reject) => {
 
@@ -168,7 +169,7 @@ function executeSync(/*args*/) {
     ensure_executable(command);
     create_result_file_name(command);
 
-    platform.executeSync(command);
+    platform.executeSync(command, options.args);
     const results = get_results(command);
 
     //Handle results

@@ -87,6 +87,7 @@ The ae object has a couple of options:
 	ae.options.errorHandling = true;
 	ae.options.minify = false;
     ae.options.program = null;
+    ae.options.args = "-noui";
 	ae.options.includes = [
 		'./node_modules/after-effects/lib/includes/console.jsx',
 		'./node_modules/after-effects/lib/includes/es5-shim.jsx',
@@ -117,6 +118,10 @@ By default, ae will look for an After Effects installation in your platforms def
     ae.options.program = path.join('OtherAppDirectory','Adobe After Effects 2015');
 
 Also handy if you've installed multiple versions of After Effects on your machine, and you'd like to target a specific one.
+
+### args (only for Windows platform)
+Command line arguments for AfterEffects. All arguments need to combined into a single string. By default, the value is "-noui" which does not show the AfterEffects editor, but runs as a background process.  
+
 
 ### includes
 Includes is an array which will concatanate the code from other files into your command, for use inside After Effects.

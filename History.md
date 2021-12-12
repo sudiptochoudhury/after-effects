@@ -1,3 +1,8 @@
+## [0.4.16] or after-effects-noui [1.0.0]
+### Changes
+- Add option to pass additional AfterEffects cli agruments
+- Set -noui as the default argument so that AfterEffcts can run as a background process and not show the UI.
+
 ## [0.4.14]
 ### Changes
 - Missed a Deprecation warning.
